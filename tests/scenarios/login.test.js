@@ -5,7 +5,6 @@ import * as loginPage from "@tests/pages/login.page";
 import * as homePage from "@tests/pages/home.page";
 import * as assert from "@helpers/asserts";
 import { describe } from "mocha";
-import * as login from "@tests/data/login.data";
 import { accountName } from "../pages/login.page";
 
 // describe("Login", function() => {
@@ -25,7 +24,7 @@ import { accountName } from "../pages/login.page";
 //   });
 // });
 
-describe("login test", function () {
+describe("it ensure user can login properly", function () {
   beforeEach(() => {
     route.visit(ROUTES.home);
   });
